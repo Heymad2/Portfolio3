@@ -1,0 +1,205 @@
+*::selection {
+  background-color: #f8c508;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: auto;
+  background: linear-gradient(to right, #5e85db, #680ccc);
+  display: flex;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 40%;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+form .logo-div {
+  width: 100%;
+  text-align: center;
+}
+
+img.logo {
+  width: 18%;
+  margin-top: 5%;
+  border-radius: 10px;
+}
+
+form .title {
+  margin-top: 5%;
+}
+
+form .advantages-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5%;
+}
+
+form .advantages-section h1 {
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+
+form .advantages-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+form .advantages-section ul li {
+  margin: 6px;
+}
+
+form .connection-mediums {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+
+form .connection-mediums i {
+  font-size: 25px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 25px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+form .connection-mediums i:hover {
+  color: salmon;
+  border-color: salmon;
+
+  transition: all 0.3s ease-in-out;
+}
+
+form .input-section {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+form .input-section input {
+  outline: none;
+  color: #717171;
+  background: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 80%;
+  background-color: white;
+
+  border: 2px solid #717171;
+}
+
+form .input-section input:focus,
+form .input-section input:hover {
+  border-color: #01a9fd;
+}
+
+form .input-section input:invalid {
+  border-color: #f33721;
+}
+
+fieldset {
+  width: 64%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+fieldset .checkbox-line {
+  margin: 0.5%;
+}
+
+form a {
+  text-decoration: none;
+  color: salmon;
+}
+
+form a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+form .sign-in {
+  color: white;
+  background-color: #1393d3;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 4%;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 1px solid #1393d3;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+form .sign-in:hover {
+  color: #1393d3;
+  background-color: white;
+  scale: 1.1;
+  border: 1px solid #1393d3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+form p.already-sign {
+  margin-bottom: 5%;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+  form {
+    width: 50%;
+  }
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  form {
+    width: 60%;
+  }
+}
+
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  form {
+    width: 83%;
+  }
+}

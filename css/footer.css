@@ -1,0 +1,182 @@
+/* style du footer */
+
+footer {
+  width: 100%;
+  height: 250px;
+  background-image: linear-gradient(to right,red,blue);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .left {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+footer .left p {
+  margin-bottom: 20px;
+  line-height: 1.5em;
+  color: white;
+}
+
+footer h1 {
+  text-transform: uppercase;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+footer .center {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .center p {
+  margin: 5px;
+}
+
+footer .right {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer .right .logos [class^="fa"] {
+  font-size: 40px;
+  margin: 10px;
+  color: white;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+footer .right .logos [class^="fa"]:hover {
+  color: #1393d3;
+  scale: 1.1;
+
+  transition: all 0.5s ease-in-out;
+}
+
+footer .right button {
+  margin-top: 20px;
+}
+
+div.sous-footer {
+  background-image: linear-gradient(to right,red,blue);
+  width: 100%;
+  height: 300px;
+  display: none;
+}
+
+p#copyright {
+  background-image: linear-gradient(to right,red,blue);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+footer button {
+  color: white;
+  background-color:black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 0;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+footer button:hover {
+  color: #1393d3;
+  background-color: white;
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
+
+footer .center a {
+  text-decoration: none;
+  color: white;
+}
+
+footer .center a:hover {
+  text-decoration: underline;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+  footer {
+    height: 300px;
+  }
+
+  footer h1 {
+    font-size: 25px;
+  }
+
+  footer .left,
+  footer .right {
+    width: 30%;
+  }
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  footer {
+    flex-wrap: wrap;
+  }
+
+  footer .left {
+    width: 40%;
+  }
+
+  footer .center {
+    width: 40%;
+  }
+
+  footer .right {
+    width: 50%;
+  }
+
+  div.sous-footer {
+    display: block;
+  }
+}
+
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  footer {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 800px;
+  }
+
+  footer .left {
+    width: 70%;
+  }
+
+  footer .center {
+    width: 70%;
+  }
+
+  footer .right {
+    width: 70%;
+  }
+
+  div.sous-footer {
+    display: none;
+  }
+}

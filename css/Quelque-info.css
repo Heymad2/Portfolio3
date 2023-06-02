@@ -1,0 +1,238 @@
+*::selection {
+  background-color: #f8c508;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+}
+
+/* style du header */
+header {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to right,red,blue);
+}
+
+#header-content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#header-buttons button,
+footer button {
+  color: white;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: 0;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+#header-buttons button:hover,
+footer button:hover {
+  color: #1393d3;
+  background-color: white;
+  scale: 1.1;
+  transition: all 0.5s ease-in-out;
+}
+
+#header-logo {
+  width: 78px;
+  height: 72px;
+  margin: 1%;
+  border-radius: 10px;
+}
+/* fin de style du header */
+
+/* style du main */
+main {
+  width: 53%;
+  height: auto;
+  background-color: white;
+  margin: 3% auto;
+  border-radius: 50px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-content {
+  background-color: #eaeaea;
+  border-radius: 10px;
+  border: 2px solid #717171;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar {
+  color: #717171;
+  background: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 0;
+  width: 80%;
+
+  transition: all 0.5s ease-in-out 0.2s;
+}
+
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px #1393d3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+.search-icon {
+  color: #717171;
+  margin: 10px;
+}
+
+.entreprise-section {
+  width: 95%;
+  border-radius: 10px;
+  background-color: #eaeaea;
+  border: 2px solid #717171;
+  margin: 3%;
+  display: flex;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.16), 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.entreprise-section .left {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+
+.entreprise-section .left img {
+  width: 100%;
+}
+
+.entreprise-section .right {
+  width: 73%;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.entreprise-section .right .liste-infos {
+  margin-top: 5%;
+  display: flex;
+}
+
+.entreprise-section .right .liste-infos li {
+  margin: 3px;
+}
+
+.entreprise-section .right .liste-infos a {
+  text-decoration: none;
+  color: #1393d3;
+
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.entreprise-section .right .liste-infos a:hover {
+  color: #f39721;
+
+  transition: all 0.3s ease-in-out;
+}
+
+#maintenance-section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#maintenance-section h1 {
+  margin: 2%;
+}
+
+#maintenance-section p {
+  text-align: center;
+}
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  /* header */
+  #header-content {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  /* contenu principal */
+  main {
+    width: 80%;
+  }
+}
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+
+  /* header */
+  header {
+    height: 250px;
+  }
+
+  #header-content {
+    flex-direction: column;
+  }
+
+  /* contenu principal */
+  .entreprise-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entreprise-section .left {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  .entreprise-section .right {
+    width: 95%;
+  }
+
+  .entreprise-section .right .liste-infos {
+    flex-direction: column;
+  }
+}

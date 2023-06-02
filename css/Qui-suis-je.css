@@ -1,0 +1,115 @@
+/* style du main */
+main {
+  width: 53%;
+  height: auto;
+  background-color: white;
+  margin: 3% auto;
+  border-radius: 10px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul {
+  padding-left: 20px; 
+}
+
+ul li {
+  margin-bottom: 20px; 
+}
+main .summary {
+  border: 3px solid #1393d3;
+  border-radius: 10px;
+  padding: 3%;
+  width: 100%;
+}
+
+main .summary h2 {
+  font-size: 25px;
+  margin: 2%;
+}
+
+main .summary > ul ul {
+  list-style: none;
+}
+main .summary > ul ul li::before {
+  content: "➣";
+}
+
+main .summary li {
+  margin: 5px;
+}
+
+main .summary a {
+  font-size: 20px;
+  text-decoration: none;
+  color: salmon;
+}
+
+main .summary a:hover {
+  text-decoration: underline;
+}
+
+.main-containers {
+  text-align: center;
+}
+
+h1.sub-title {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 35px;
+  width: 100%;
+}
+
+p.main-paragraphs {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 2.5%;
+  text-align: justify;
+}
+
+a#last-update {
+  font-size: 17px;
+  margin: 2.5%;
+  color: salmon;
+  text-decoration: none;
+}
+
+
+/* Taille PC Portable*/
+@media (max-width: 1300px) {
+}
+
+/* Taille tablette*/
+@media (max-width: 1000px) {
+  /* contenu principal */
+  main {
+    width: 80%;
+  }
+
+  main .summary {
+    border: none;
+  }
+}
+/* Taille smartphone*/
+@media (max-width: 700px) {
+  /* contenu principal */
+  .entreprise-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .entreprise-section .left {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  .entreprise-section .right {
+    width: 95%;
+  }
+
+  .entreprise-section .right .liste-infos {
+    flex-direction: column;
+  }
+}

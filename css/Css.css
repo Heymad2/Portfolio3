@@ -1,0 +1,207 @@
+/* style du main */
+main {
+  width: 53%;
+  height: auto;
+  background-color: white;
+  margin: 3% auto;
+  border-radius: 10px;
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#description {
+  margin-top: 5%;
+}
+
+main .change-language {
+  font-size: 0;
+}
+
+main #top-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main #top-buttons .change-language button {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  width: 100px;
+  text-decoration: none;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+main #top-buttons .change-language button.french {
+  border-radius: 2rem 0 0 2rem;
+}
+
+main #top-buttons .change-language button.english {
+  border-radius: 0 2rem 2rem 0;
+}
+
+main #top-buttons .change-language button {
+  color: white;
+  background-color: #1393d3;
+  border: 1px solid #1393d3;
+  font-weight: bold;
+}
+
+main #top-buttons .change-language button:hover {
+  color: #1393d3;
+  background-color: white;
+  border: 1px solid #1393d3;
+
+  transition: all 0.5s ease-in-out;
+}
+
+main #top-buttons .change-language button[onclick] {
+  color: #1393d3;
+  background-color: white;
+  border: 1px solid #1393d3;
+  font-weight: normal;
+}
+
+main #top-buttons .change-language button[onclick]:hover {
+  color: white;
+  background-color: #1393d3;
+  border: 1px solid #1393d3;
+}
+
+main #top-buttons .pestel-button {
+  color: white;
+  background: linear-gradient(to right, #f12711, #f5af19);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 2rem;
+  border: none;
+  scale: 1;
+
+  transition: all 0.5s ease-in-out 0.1s;
+}
+
+main #top-buttons .pestel-button:hover {
+  scale: 1.1;
+
+  transition: all 0.5s ease-in-out;
+}
+
+main .summary {
+  margin: 5%;
+  font-size: 35px;
+}
+
+main .summary h2 {
+  border: 3px solid #1393d3;
+  border-radius: 10px;
+  padding: 3%;
+  width: 100%;
+}
+
+main .summary h2 {
+  font-size: 25px;
+  margin: 2%;
+}
+
+main .summary > ul ul {
+  list-style: none;
+}
+main .summary > ul ul li::before {
+  content: "➣";
+}
+
+main .summary li {
+  margin: 5px;
+}
+
+main .summary a {
+  font-size: 20px;
+  text-decoration: none;
+  color: salmon;
+}
+
+main .summary a:hover {
+  text-decoration: underline;
+}
+
+.main-summary {
+  text-align: center;
+}
+
+
+p.main-paragraphs {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 2.5%;
+  text-align: justify;
+}
+
+
+
+#hrm-title {
+  margin-top: 10%;
+}
+
+#capgemini-functions img {
+  margin: 10%;
+  width: 80%;
+}
+
+#capgemini-functions #compta-title ~ img {
+  width: 60%;
+}
+
+a#last-update {
+  font-size: 17px;
+  margin: 2.5%;
+  color: salmon;
+  text-decoration: none;
+}
+
+a#last-update:hover {
+  text-decoration: underline;
+}
+
+#stats {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 0;
+  margin-top: 15%;
+  margin-bottom: 2.5%;
+}
+
+#stats tr td {
+  padding: 5px;
+}
+
+#stats tr td:nth-child(2) {
+  text-align: center;
+  width: 50%;
+}
+
+#stats tr:nth-child(even) {
+  background-color: whitesmoke;
+}
+#description p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 2.5%;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}

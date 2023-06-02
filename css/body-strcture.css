@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+*::selection {
+  background-color: #f8c508;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+  overflow-x: hidden;
+}
+ul {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
